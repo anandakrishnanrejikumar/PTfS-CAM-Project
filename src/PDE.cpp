@@ -1,3 +1,4 @@
+//This is from branch Ananda
 #include "PDE.h"
 #include <math.h>
 #include <iostream>
@@ -172,6 +173,7 @@ int nth, istart, iend, tid, jj;
 
     istart = (xSize - 2) * tid / nth + 1;
     iend = (xSize - 2) * (tid + 1) / nth;
+
 
     // Forward substitution
     for (int j = 1; j < ySize - 1 + nth - 1; ++j)
