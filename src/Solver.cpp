@@ -3,6 +3,7 @@
 
 SolverClass::SolverClass(PDE *pde_, Grid *x_, Grid *b_):pde(pde_),x(x_),b(b_)
 {
+    
 }
 
 int SolverClass::CG(int niter, double tol)
