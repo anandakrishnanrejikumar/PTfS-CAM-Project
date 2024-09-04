@@ -1,8 +1,8 @@
 #include "Grid.h"
 #include <algorithm>
-
+#include <omp.h>
 #ifdef LIKWID_PERFMON
-    #include <likwid.h>
+#include <likwid.h>
 #endif
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -17,6 +17,8 @@ Grid::Grid(int columns_,int rows_):columns(columns_+2*HALO),rows(rows_+2*HALO)
 
     //always pad with halo; to support Dirichlet
     arrayPtr = new double[ rows*columns];
+    /*Initialize the grid in parallel so that the data is local to each processor */   
+    #pragma omp parallel for schedule(static)
     for (int i =0; i<rows*columns;i++)
     {
         arrayPtr[i] = 0.0;
@@ -51,6 +53,7 @@ Grid::Grid(const Grid &s)
         int totGrids = rows * columns;
         // performing a deep-copy
         arrayPtr = new double[totGrids];
+        #pragma omp parallel for schedule(static)
         for(int i=0; i<totGrids;++i)
         {
             arrayPtr[i] = s.arrayPtr[i];
@@ -167,7 +170,6 @@ void Grid::fillBoundary(std::function<double(int,int)> func, Direction dir)
 void Grid::fill(double val, bool halo)
 {
     int shift = halo?0:HALO;
-
     for(int j=shift; j<numGrids_y(true)-shift; ++j) {
         for(int i=shift; i<numGrids_x(true)-shift; ++i) {
             (*this)(j,i) = val;
@@ -178,7 +180,6 @@ void Grid::fill(double val, bool halo)
 void Grid::rand(bool halo, unsigned int seed)
 {
     int shift = halo?0:HALO;
-
     for(int j=shift; j<numGrids_y(true)-shift; ++j) {
         for(int i=shift; i<numGrids_x(true)-shift; ++i) {
             (*this)(j,i) = rand_r(&seed)/static_cast<double>(RAND_MAX);
@@ -190,7 +191,6 @@ void Grid::rand(bool halo, unsigned int seed)
 void Grid::fill(std::function<double(int,int)> func, bool halo)
 {
     int shift = halo?0:HALO;
-
     for(int j=shift; j<numGrids_y(true)-shift; ++j) {
         for(int i=shift; i<numGrids_x(true)-shift; ++i) {
             (*this)(j,i) = func(i,j);
@@ -255,7 +255,9 @@ void axpby(Grid *lhs, double a, Grid *x, double b, Grid *y, bool halo)
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_START("AXPBY");
 #endif
-
+#pragma omp parallel
+{
+    #pragma omp for schedule(static)
     for(int yIndex=shift; yIndex<lhs->numGrids_y(true)-shift; ++yIndex)
     {
         for(int xIndex=shift; xIndex<lhs->numGrids_x(true)-shift; ++xIndex)
@@ -263,6 +265,7 @@ void axpby(Grid *lhs, double a, Grid *x, double b, Grid *y, bool halo)
             (*lhs)(yIndex,xIndex) = (a*(*x)(yIndex,xIndex)) + (b*(*y)(yIndex,xIndex));
         }
     }
+}
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_STOP("AXPBY");
 #endif
@@ -284,7 +287,9 @@ void copy(Grid *lhs, double a, Grid *rhs, bool halo)
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_START("COPY");
 #endif
-
+#pragma omp parallel
+{
+#pragma omp for schedule(static)
     for(int yIndex=shift; yIndex<lhs->numGrids_y(true)-shift; ++yIndex)
     {
         for(int xIndex=shift; xIndex<lhs->numGrids_x(true)-shift; ++xIndex)
@@ -292,6 +297,7 @@ void copy(Grid *lhs, double a, Grid *rhs, bool halo)
             (*lhs)(yIndex,xIndex) = a*(*rhs)(yIndex,xIndex);
         }
     }
+}
 
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_STOP("COPY");
@@ -318,6 +324,9 @@ double dotProduct(Grid *x, Grid *y, bool halo)
 #endif
 
     double dot_res = 0;
+#pragma omp parallel
+{
+#pragma omp for schedule(static) reduction(+:dot_res) 
     for(int yIndex=shift; yIndex<x->numGrids_y(true)-shift; ++yIndex)
     {
         for(int xIndex=shift; xIndex<x->numGrids_x(true)-shift; ++xIndex)
@@ -325,6 +334,7 @@ double dotProduct(Grid *x, Grid *y, bool halo)
             dot_res += (*x)(yIndex,xIndex)*(*y)(yIndex,xIndex);
         }
     }
+}
 
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_STOP("DOT_PRODUCT");

@@ -1,0 +1,20 @@
+=== JOB_STATISTICS ===
+=== current date     : Tue Sep  3 11:35:27 CEST 2024
+= Job-ID             : 1564257 on fritz
+= Job-Name           : run_perf
+= Job-Command        : /home/hpc/ptfs/ptfs228h/Tinto6/run_perf.sh
+= Initial workdir    : /home/hpc/ptfs/ptfs228h/Tinto6
+= Queue/Partition    : singlenode
+= Slurm account      : ptfs with QOS=ptfs
+= Requested resources:  for 01:00:00
+= Elapsed runtime    : 00:01:59
+= Total RAM usage    : 0.0 GiB 
+= Node list          : f0562
+= Subm/Elig/Start/End: 2024-09-03T11:33:26 / 2024-09-03T11:33:26 / 2024-09-03T11:33:27 / 2024-09-03T11:35:26
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/woody          0.0K  1000.0G  1500.0G        N/A       1    5,000K   7,500K        N/A    
+    /home/hpc            6.3G   104.9G   209.7G        N/A  10,822      500K   1,000K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1       80K     250K        N/A    
+======================

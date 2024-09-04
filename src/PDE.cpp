@@ -1,8 +1,9 @@
 #include "PDE.h"
 #include <math.h>
 #include <iostream>
+#include <omp.h>
 #ifdef LIKWID_PERFMON
-    #include <likwid.h>
+#include <likwid.h>
 #endif
 //default boundary function as in ex01
 double defaultBoundary(int i, int j, double h_x, double h_y)
@@ -24,11 +25,15 @@ PDE::PDE(int len_x_, int len_y_, int grids_x_, int grids_y_):len_x(len_x_), len_
     initFunc = zeroFunc;
 
     //by default all boundary is Dirichlet
+    /* Loop fusion */
     for (int i=0; i<4; ++i)
+    {
         boundary[i] = Dirichlet;
-
-    for (int i=0; i<4; ++i)
         boundaryFunc[i] = zeroFunc;
+    }
+
+    
+        
 }
 
 int PDE::numGrids_x(bool halo)
@@ -115,13 +120,18 @@ void PDE::applyStencil(Grid* lhs, Grid* x)
     LIKWID_MARKER_START("APPLY_STENCIL");
 #endif
 
+
+
+    #pragma omp parallel for schedule(static)
     for ( int j=1; j<ySize-1; ++j)
-    {
+    { 
+  
         for ( int i=1; i<xSize-1; ++i)
         {
             (*lhs)(j,i) = w_c*(*x)(j,i) - w_y*((*x)(j+1,i) + (*x)(j-1,i)) - w_x*((*x)(j,i+1) + (*x)(j,i-1));
         }
     }
+
 
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_STOP("APPLY_STENCIL");
@@ -152,22 +162,46 @@ void PDE::GSPreCon(Grid* rhs, Grid *x)
     LIKWID_MARKER_START("GS_PRE_CON");
 #endif
 
-    //forward substitution
-    for ( int j=1; j<ySize-1; ++j)
+
+
+int nth, istart, iend, tid, jj;
+#pragma omp parallel private(nth, istart, iend, tid, jj)
+{
+    nth = omp_get_num_threads();
+    tid = omp_get_thread_num();
+
+    istart = (xSize - 2) * tid / nth + 1;
+    iend = (xSize - 2) * (tid + 1) / nth;
+
+    // Forward substitution
+    for (int j = 1; j < ySize - 1 + nth - 1; ++j)
     {
-        for ( int i=1; i<xSize-1; ++i)
+        jj = j - tid;
+        if (jj >= 1 && jj < ySize - 1)
         {
-            (*x)(j,i) = w_c*((*rhs)(j,i) + (w_y*(*x)(j-1,i) + w_x*(*x)(j,i-1)));
+            for (int i = istart; i <= iend; ++i)
+            {
+                (*x)(jj, i) = w_c * ((*rhs)(jj, i) + (w_y * (*x)(jj - 1, i) + w_x * (*x)(jj, i - 1)));
+            }
         }
+        #pragma omp barrier
     }
-    //backward substitution
-    for ( int j=ySize-2; j>0; --j)
+
+    // Backward substitution
+    for (int j = ySize - 2 + nth - 1; j > 0; --j)
     {
-        for ( int i=xSize-2; i>0; --i)
+        jj = j - tid;
+        if (jj >= 1 && jj < ySize - 1)
         {
-            (*x)(j,i) = (*x)(j,i) + w_c*(w_y*(*x)(j+1,i) + w_x*(*x)(j,i+1));
+            for (int i = iend; i >= istart; --i)
+            {
+                (*x)(jj, i) = (*x)(jj, i) + w_c * (w_y * (*x)(jj + 1, i) + w_x * (*x)(jj, i + 1));
+            }
         }
+        #pragma omp barrier
     }
+}
+
 
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_STOP("GS_PRE_CON");

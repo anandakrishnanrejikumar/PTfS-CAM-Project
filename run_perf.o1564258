@@ -1,0 +1,571 @@
+### Starting TaskPrologue of job 1564258 on f0340 at Tue Sep  3 11:35:45 CEST 2024
+#   SLURM_JOB_NODELIST=f0340
+#   SLURM_JOB_NUM_NODES=1
+#   SLURM_NTASKS=
+#   SLURM_NPROCS=
+#   SLURM_TASKS_PER_NODE=72
+#   SLURM_JOB_CPUS_PER_NODE=72
+#   SLURM_EXPORT_ENV=
+Running on cores 0-71 with governor powersave
+### Finished TaskPrologue
+email notification
+Run #1
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2619.240944 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 833.289065 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.056210000e-01 |	 3.168914063e-03 |
+    DOT_PRODUCT |	        109 |	 1.999030000e-01 |	 1.833972477e-03 |
+  APPLY_STENCIL |	         45 |	 1.436190000e-01 |	 3.191533333e-03 |
+             CG |	          1 |	 3.054320000e-01 |	 3.054320000e-01 |
+     GS_PRE_CON |	         21 |	 6.165980000e-01 |	 2.936180952e-02 |
+            PCG |	          1 |	 9.600510000e-01 |	 9.600510000e-01 |
+----------------------------------------------------------------------------------
+
+Run #2
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2583.161661 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 828.899584 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.068620000e-01 |	 3.178609375e-03 |
+    DOT_PRODUCT |	        109 |	 1.995690000e-01 |	 1.830908257e-03 |
+  APPLY_STENCIL |	         45 |	 1.431220000e-01 |	 3.180488889e-03 |
+             CG |	          1 |	 3.096980000e-01 |	 3.096980000e-01 |
+     GS_PRE_CON |	         21 |	 6.234520000e-01 |	 2.968819048e-02 |
+            PCG |	          1 |	 9.651350000e-01 |	 9.651350000e-01 |
+----------------------------------------------------------------------------------
+
+Run #3
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2606.780235 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 840.473859 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.068960000e-01 |	 3.178875000e-03 |
+    DOT_PRODUCT |	        109 |	 1.983890000e-01 |	 1.820082569e-03 |
+  APPLY_STENCIL |	         45 |	 1.400730000e-01 |	 3.112733333e-03 |
+             CG |	          1 |	 3.068920000e-01 |	 3.068920000e-01 |
+     GS_PRE_CON |	         21 |	 6.112520000e-01 |	 2.910723810e-02 |
+            PCG |	          1 |	 9.518440000e-01 |	 9.518440000e-01 |
+----------------------------------------------------------------------------------
+
+Run #4
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2530.860682 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 843.133886 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.115500000e-01 |	 3.215234375e-03 |
+    DOT_PRODUCT |	        109 |	 1.991130000e-01 |	 1.826724771e-03 |
+  APPLY_STENCIL |	         45 |	 1.414660000e-01 |	 3.143688889e-03 |
+             CG |	          1 |	 3.160980000e-01 |	 3.160980000e-01 |
+     GS_PRE_CON |	         21 |	 6.093530000e-01 |	 2.901680952e-02 |
+            PCG |	          1 |	 9.488410000e-01 |	 9.488410000e-01 |
+----------------------------------------------------------------------------------
+
+Run #5
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2591.051157 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 835.886269 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.077450000e-01 |	 3.185507813e-03 |
+    DOT_PRODUCT |	        109 |	 1.998410000e-01 |	 1.833403670e-03 |
+  APPLY_STENCIL |	         45 |	 1.461120000e-01 |	 3.246933333e-03 |
+             CG |	          1 |	 3.087550000e-01 |	 3.087550000e-01 |
+     GS_PRE_CON |	         21 |	 6.131420000e-01 |	 2.919723810e-02 |
+            PCG |	          1 |	 9.570680000e-01 |	 9.570680000e-01 |
+----------------------------------------------------------------------------------
+
+Run #6
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2606.270687 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 829.338685 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.095010000e-01 |	 3.199226563e-03 |
+    DOT_PRODUCT |	        109 |	 2.005930000e-01 |	 1.840302752e-03 |
+  APPLY_STENCIL |	         45 |	 1.407780000e-01 |	 3.128400000e-03 |
+             CG |	          1 |	 3.069520000e-01 |	 3.069520000e-01 |
+     GS_PRE_CON |	         21 |	 6.181940000e-01 |	 2.943780952e-02 |
+            PCG |	          1 |	 9.646240000e-01 |	 9.646240000e-01 |
+----------------------------------------------------------------------------------
+
+Run #7
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2608.667297 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 783.221055 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.080860000e-01 |	 3.188171875e-03 |
+    DOT_PRODUCT |	        109 |	 1.991520000e-01 |	 1.827082569e-03 |
+  APPLY_STENCIL |	         45 |	 1.406800000e-01 |	 3.126222222e-03 |
+             CG |	          1 |	 3.066700000e-01 |	 3.066700000e-01 |
+     GS_PRE_CON |	         21 |	 6.777800000e-01 |	 3.227523810e-02 |
+            PCG |	          1 |	 1.021423000e+00 |	 1.021423000e+00 |
+----------------------------------------------------------------------------------
+
+Run #8
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2599.352111 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 834.304951 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.105220000e-01 |	 3.207203125e-03 |
+    DOT_PRODUCT |	        109 |	 1.975020000e-01 |	 1.811944954e-03 |
+  APPLY_STENCIL |	         45 |	 1.397210000e-01 |	 3.104911111e-03 |
+             CG |	          1 |	 3.077690000e-01 |	 3.077690000e-01 |
+     GS_PRE_CON |	         21 |	 6.167450000e-01 |	 2.936880952e-02 |
+            PCG |	          1 |	 9.588820000e-01 |	 9.588820000e-01 |
+----------------------------------------------------------------------------------
+
+Run #9
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2611.145020 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 840.302593 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.066250000e-01 |	 3.176757813e-03 |
+    DOT_PRODUCT |	        109 |	 1.986060000e-01 |	 1.822073394e-03 |
+  APPLY_STENCIL |	         45 |	 1.414450000e-01 |	 3.143222222e-03 |
+             CG |	          1 |	 3.063790000e-01 |	 3.063790000e-01 |
+     GS_PRE_CON |	         21 |	 6.084980000e-01 |	 2.897609524e-02 |
+            PCG |	          1 |	 9.520380000e-01 |	 9.520380000e-01 |
+----------------------------------------------------------------------------------
+
+Run #10
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2597.605008 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 839.206908 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.085290000e-01 |	 3.191632812e-03 |
+    DOT_PRODUCT |	        109 |	 1.998630000e-01 |	 1.833605505e-03 |
+  APPLY_STENCIL |	         45 |	 1.395430000e-01 |	 3.100955556e-03 |
+             CG |	          1 |	 3.079760000e-01 |	 3.079760000e-01 |
+     GS_PRE_CON |	         21 |	 6.104480000e-01 |	 2.906895238e-02 |
+            PCG |	          1 |	 9.532810000e-01 |	 9.532810000e-01 |
+----------------------------------------------------------------------------------
+
+Run #11
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2588.728675 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 841.680879 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.047100000e-01 |	 3.161796875e-03 |
+    DOT_PRODUCT |	        109 |	 1.994530000e-01 |	 1.829844037e-03 |
+  APPLY_STENCIL |	         45 |	 1.422070000e-01 |	 3.160155556e-03 |
+             CG |	          1 |	 3.090320000e-01 |	 3.090320000e-01 |
+     GS_PRE_CON |	         21 |	 6.105600000e-01 |	 2.907428571e-02 |
+            PCG |	          1 |	 9.504790000e-01 |	 9.504790000e-01 |
+----------------------------------------------------------------------------------
+
+Run #12
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2602.040650 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 847.804293 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.065840000e-01 |	 3.176437500e-03 |
+    DOT_PRODUCT |	        109 |	 1.982160000e-01 |	 1.818495413e-03 |
+  APPLY_STENCIL |	         45 |	 1.408130000e-01 |	 3.129177778e-03 |
+             CG |	          1 |	 3.074510000e-01 |	 3.074510000e-01 |
+     GS_PRE_CON |	         21 |	 6.040790000e-01 |	 2.876566667e-02 |
+            PCG |	          1 |	 9.436140000e-01 |	 9.436140000e-01 |
+----------------------------------------------------------------------------------
+
+Run #13
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2605.311579 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 839.679033 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.062090000e-01 |	 3.173507812e-03 |
+    DOT_PRODUCT |	        109 |	 1.988930000e-01 |	 1.824706422e-03 |
+  APPLY_STENCIL |	         45 |	 1.433190000e-01 |	 3.184866667e-03 |
+             CG |	          1 |	 3.070650000e-01 |	 3.070650000e-01 |
+     GS_PRE_CON |	         21 |	 6.085460000e-01 |	 2.897838095e-02 |
+            PCG |	          1 |	 9.527450000e-01 |	 9.527450000e-01 |
+----------------------------------------------------------------------------------
+
+Run #14
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2581.494556 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 822.727857 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.091190000e-01 |	 3.196242188e-03 |
+    DOT_PRODUCT |	        109 |	 2.017900000e-01 |	 1.851284404e-03 |
+  APPLY_STENCIL |	         45 |	 1.408450000e-01 |	 3.129888889e-03 |
+             CG |	          1 |	 3.098980000e-01 |	 3.098980000e-01 |
+     GS_PRE_CON |	         21 |	 6.297750000e-01 |	 2.998928571e-02 |
+            PCG |	          1 |	 9.723750000e-01 |	 9.723750000e-01 |
+----------------------------------------------------------------------------------
+
+Run #15
+slurmstepd: error: execve(): /home/hpc/ptfs/ptfs228h/Tinto6/./perf: No such file or directory
+srun: error: f0340: task 0: Exited with exit code 2
+srun: Terminating StepId=1564258.14
+Run #16
+slurmstepd: error: execve(): /home/hpc/ptfs/ptfs228h/Tinto6/./perf: No such file or directory
+srun: error: f0340: task 0: Exited with exit code 2
+srun: Terminating StepId=1564258.15
+Run #17
+slurmstepd: error: execve(): /home/hpc/ptfs/ptfs228h/Tinto6/./perf: Permission denied
+srun: error: f0340: task 0: Exited with exit code 13
+srun: Terminating StepId=1564258.16
+Run #18
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 146.507723 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 130.013018 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.645760000e-01 |	 3.629500000e-03 |
+    DOT_PRODUCT |	        109 |	 1.961881000e+00 |	 1.799890826e-02 |
+  APPLY_STENCIL |	         45 |	 9.727662000e+00 |	 2.161702667e-01 |
+             CG |	          1 |	 5.460463000e+00 |	 5.460463000e+00 |
+     GS_PRE_CON |	         21 |	 6.227540000e-01 |	 2.965495238e-02 |
+            PCG |	          1 |	 6.153230000e+00 |	 6.153230000e+00 |
+----------------------------------------------------------------------------------
+
+Run #19
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 147.549153 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 132.570654 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.443180000e-01 |	 3.471234375e-03 |
+    DOT_PRODUCT |	        109 |	 1.946881000e+00 |	 1.786129358e-02 |
+  APPLY_STENCIL |	         45 |	 9.599820000e+00 |	 2.133293333e-01 |
+             CG |	          1 |	 5.421922000e+00 |	 5.421922000e+00 |
+     GS_PRE_CON |	         21 |	 6.141910000e-01 |	 2.924719048e-02 |
+            PCG |	          1 |	 6.034518000e+00 |	 6.034518000e+00 |
+----------------------------------------------------------------------------------
+
+Run #20
+OMP: Warning #251: OMP_PLACES: syntax error, using "cores".
+OMP: Warning #251: OMP_PLACES: syntax error, using threads.
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 149.533689 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 132.186505 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.611810000e-01 |	 3.602976563e-03 |
+    DOT_PRODUCT |	        109 |	 1.839390000e+00 |	 1.687513761e-02 |
+  APPLY_STENCIL |	         45 |	 9.636907000e+00 |	 2.141534889e-01 |
+             CG |	          1 |	 5.349965000e+00 |	 5.349965000e+00 |
+     GS_PRE_CON |	         21 |	 6.172860000e-01 |	 2.939457143e-02 |
+            PCG |	          1 |	 6.052055000e+00 |	 6.052055000e+00 |
+----------------------------------------------------------------------------------
+
+email notification
+=== JOB_STATISTICS ===
+=== current date     : Tue Sep  3 11:38:06 CEST 2024
+= Job-ID             : 1564258 on fritz
+= Job-Name           : run_perf
+= Job-Command        : /home/hpc/ptfs/ptfs228h/Tinto6/run_perf.sh
+= Initial workdir    : /home/hpc/ptfs/ptfs228h/Tinto6
+= Queue/Partition    : singlenode
+= Slurm account      : ptfs with QOS=ptfs
+= Requested resources:  for 01:00:00
+= Elapsed runtime    : 00:02:21
+= Total RAM usage    : 0.0 GiB 
+= Node list          : f0340
+= Subm/Elig/Start/End: 2024-09-03T11:35:41 / 2024-09-03T11:35:41 / 2024-09-03T11:35:45 / 2024-09-03T11:38:06
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/woody          0.0K  1000.0G  1500.0G        N/A       1    5,000K   7,500K        N/A    
+    /home/hpc            6.3G   104.9G   209.7G        N/A  10,825      500K   1,000K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1       80K     250K        N/A    
+======================

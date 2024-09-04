@@ -1,0 +1,612 @@
+### Starting TaskPrologue of job 1564109 on f1253 at Tue Sep  3 11:13:18 CEST 2024
+#   SLURM_JOB_NODELIST=f1253
+#   SLURM_JOB_NUM_NODES=1
+#   SLURM_NTASKS=
+#   SLURM_NPROCS=
+#   SLURM_TASKS_PER_NODE=72
+#   SLURM_JOB_CPUS_PER_NODE=72
+#   SLURM_EXPORT_ENV=
+Running on cores 0-71 with governor powersave
+### Finished TaskPrologue
+email notification
+Run #1
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2630.947174 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 853.075818 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.964480000e-01 |	 3.097250000e-03 |
+    DOT_PRODUCT |	        109 |	 1.984920000e-01 |	 1.821027523e-03 |
+  APPLY_STENCIL |	         45 |	 1.374050000e-01 |	 3.053444444e-03 |
+             CG |	          1 |	 3.040730000e-01 |	 3.040730000e-01 |
+     GS_PRE_CON |	         21 |	 6.047830000e-01 |	 2.879919048e-02 |
+            PCG |	          1 |	 9.377830000e-01 |	 9.377830000e-01 |
+----------------------------------------------------------------------------------
+
+Run #2
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2649.366305 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 808.093052 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.996990000e-01 |	 3.122648437e-03 |
+    DOT_PRODUCT |	        109 |	 2.010530000e-01 |	 1.844522936e-03 |
+  APPLY_STENCIL |	         45 |	 1.390140000e-01 |	 3.089200000e-03 |
+             CG |	          1 |	 3.019590000e-01 |	 3.019590000e-01 |
+     GS_PRE_CON |	         21 |	 6.492240000e-01 |	 3.091542857e-02 |
+            PCG |	          1 |	 9.899850000e-01 |	 9.899850000e-01 |
+----------------------------------------------------------------------------------
+
+Run #3
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2630.194634 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 844.859505 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.018770000e-01 |	 3.139664062e-03 |
+    DOT_PRODUCT |	        109 |	 1.990190000e-01 |	 1.825862385e-03 |
+  APPLY_STENCIL |	         45 |	 1.357240000e-01 |	 3.016088889e-03 |
+             CG |	          1 |	 3.041600000e-01 |	 3.041600000e-01 |
+     GS_PRE_CON |	         21 |	 6.111300000e-01 |	 2.910142857e-02 |
+            PCG |	          1 |	 9.469030000e-01 |	 9.469030000e-01 |
+----------------------------------------------------------------------------------
+
+Run #4
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2647.498776 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 830.870150 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.995350000e-01 |	 3.121367188e-03 |
+    DOT_PRODUCT |	        109 |	 1.983610000e-01 |	 1.819825688e-03 |
+  APPLY_STENCIL |	         45 |	 1.387980000e-01 |	 3.084400000e-03 |
+             CG |	          1 |	 3.021720000e-01 |	 3.021720000e-01 |
+     GS_PRE_CON |	         21 |	 6.246840000e-01 |	 2.974685714e-02 |
+            PCG |	          1 |	 9.628460000e-01 |	 9.628460000e-01 |
+----------------------------------------------------------------------------------
+
+Run #5
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2656.254150 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 845.718708 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.979460000e-01 |	 3.108953125e-03 |
+    DOT_PRODUCT |	        109 |	 1.985470000e-01 |	 1.821532110e-03 |
+  APPLY_STENCIL |	         45 |	 1.351170000e-01 |	 3.002600000e-03 |
+             CG |	          1 |	 3.011760000e-01 |	 3.011760000e-01 |
+     GS_PRE_CON |	         21 |	 6.117600000e-01 |	 2.913142857e-02 |
+            PCG |	          1 |	 9.459410000e-01 |	 9.459410000e-01 |
+----------------------------------------------------------------------------------
+
+Run #6
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2626.102142 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 838.976323 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.035110000e-01 |	 3.152429688e-03 |
+    DOT_PRODUCT |	        109 |	 1.980290000e-01 |	 1.816779817e-03 |
+  APPLY_STENCIL |	         45 |	 1.355700000e-01 |	 3.012666667e-03 |
+             CG |	          1 |	 3.046340000e-01 |	 3.046340000e-01 |
+     GS_PRE_CON |	         21 |	 6.178430000e-01 |	 2.942109524e-02 |
+            PCG |	          1 |	 9.535430000e-01 |	 9.535430000e-01 |
+----------------------------------------------------------------------------------
+
+Run #7
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2641.859605 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 849.910122 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.022620000e-01 |	 3.142671875e-03 |
+    DOT_PRODUCT |	        109 |	 1.966640000e-01 |	 1.804256881e-03 |
+  APPLY_STENCIL |	         45 |	 1.372170000e-01 |	 3.049266667e-03 |
+             CG |	          1 |	 3.028170000e-01 |	 3.028170000e-01 |
+     GS_PRE_CON |	         21 |	 6.030020000e-01 |	 2.871438095e-02 |
+            PCG |	          1 |	 9.412760000e-01 |	 9.412760000e-01 |
+----------------------------------------------------------------------------------
+
+Run #8
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2635.784063 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 843.403216 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.017630000e-01 |	 3.138773438e-03 |
+    DOT_PRODUCT |	        109 |	 1.992550000e-01 |	 1.828027523e-03 |
+  APPLY_STENCIL |	         45 |	 1.371600000e-01 |	 3.048000000e-03 |
+             CG |	          1 |	 3.035150000e-01 |	 3.035150000e-01 |
+     GS_PRE_CON |	         21 |	 6.100420000e-01 |	 2.904961905e-02 |
+            PCG |	          1 |	 9.485380000e-01 |	 9.485380000e-01 |
+----------------------------------------------------------------------------------
+
+Run #9
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2620.905654 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 848.155738 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.011250000e-01 |	 3.133789063e-03 |
+    DOT_PRODUCT |	        109 |	 1.986060000e-01 |	 1.822073394e-03 |
+  APPLY_STENCIL |	         45 |	 1.353430000e-01 |	 3.007622222e-03 |
+             CG |	          1 |	 3.052380000e-01 |	 3.052380000e-01 |
+     GS_PRE_CON |	         21 |	 6.090920000e-01 |	 2.900438095e-02 |
+            PCG |	          1 |	 9.432230000e-01 |	 9.432230000e-01 |
+----------------------------------------------------------------------------------
+
+Run #10
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2632.886730 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 843.407662 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.994360000e-01 |	 3.120593750e-03 |
+    DOT_PRODUCT |	        109 |	 1.982250000e-01 |	 1.818577982e-03 |
+  APPLY_STENCIL |	         45 |	 1.365190000e-01 |	 3.033755556e-03 |
+             CG |	          1 |	 3.038490000e-01 |	 3.038490000e-01 |
+     GS_PRE_CON |	         21 |	 6.146690000e-01 |	 2.926995238e-02 |
+            PCG |	          1 |	 9.485330000e-01 |	 9.485330000e-01 |
+----------------------------------------------------------------------------------
+
+Run #11
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2633.883596 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 840.475625 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.007910000e-01 |	 3.131179687e-03 |
+    DOT_PRODUCT |	        109 |	 1.993990000e-01 |	 1.829348624e-03 |
+  APPLY_STENCIL |	         45 |	 1.369520000e-01 |	 3.043377778e-03 |
+             CG |	          1 |	 3.037340000e-01 |	 3.037340000e-01 |
+     GS_PRE_CON |	         21 |	 6.150300000e-01 |	 2.928714286e-02 |
+            PCG |	          1 |	 9.518420000e-01 |	 9.518420000e-01 |
+----------------------------------------------------------------------------------
+
+Run #12
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2631.899277 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 842.004223 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.001740000e-01 |	 3.126359375e-03 |
+    DOT_PRODUCT |	        109 |	 1.983950000e-01 |	 1.820137615e-03 |
+  APPLY_STENCIL |	         45 |	 1.367740000e-01 |	 3.039422222e-03 |
+             CG |	          1 |	 3.039630000e-01 |	 3.039630000e-01 |
+     GS_PRE_CON |	         21 |	 6.150700000e-01 |	 2.928904762e-02 |
+            PCG |	          1 |	 9.501140000e-01 |	 9.501140000e-01 |
+----------------------------------------------------------------------------------
+
+Run #13
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2632.011844 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 842.336684 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.035700000e-01 |	 3.152890625e-03 |
+    DOT_PRODUCT |	        109 |	 1.988650000e-01 |	 1.824449541e-03 |
+  APPLY_STENCIL |	         45 |	 1.349860000e-01 |	 2.999688889e-03 |
+             CG |	          1 |	 3.039500000e-01 |	 3.039500000e-01 |
+     GS_PRE_CON |	         21 |	 6.129480000e-01 |	 2.918800000e-02 |
+            PCG |	          1 |	 9.497390000e-01 |	 9.497390000e-01 |
+----------------------------------------------------------------------------------
+
+Run #14
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2653.566891 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 849.707913 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.972780000e-01 |	 3.103734375e-03 |
+    DOT_PRODUCT |	        109 |	 1.995210000e-01 |	 1.830467890e-03 |
+  APPLY_STENCIL |	         45 |	 1.360630000e-01 |	 3.023622222e-03 |
+             CG |	          1 |	 3.014810000e-01 |	 3.014810000e-01 |
+     GS_PRE_CON |	         21 |	 6.066100000e-01 |	 2.888619048e-02 |
+            PCG |	          1 |	 9.415000000e-01 |	 9.415000000e-01 |
+----------------------------------------------------------------------------------
+
+Run #15
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2645.992644 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 848.683003 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.972220000e-01 |	 3.103296875e-03 |
+    DOT_PRODUCT |	        109 |	 1.993000000e-01 |	 1.828440367e-03 |
+  APPLY_STENCIL |	         45 |	 1.364920000e-01 |	 3.033155556e-03 |
+             CG |	          1 |	 3.023440000e-01 |	 3.023440000e-01 |
+     GS_PRE_CON |	         21 |	 6.082230000e-01 |	 2.896300000e-02 |
+            PCG |	          1 |	 9.426370000e-01 |	 9.426370000e-01 |
+----------------------------------------------------------------------------------
+
+Run #16
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2654.649951 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 854.145113 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.034570000e-01 |	 3.152007813e-03 |
+    DOT_PRODUCT |	        109 |	 1.967240000e-01 |	 1.804807339e-03 |
+  APPLY_STENCIL |	         45 |	 1.348150000e-01 |	 2.995888889e-03 |
+             CG |	          1 |	 3.013580000e-01 |	 3.013580000e-01 |
+     GS_PRE_CON |	         21 |	 5.986630000e-01 |	 2.850776190e-02 |
+            PCG |	          1 |	 9.366090000e-01 |	 9.366090000e-01 |
+----------------------------------------------------------------------------------
+
+Run #17
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2658.337210 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 827.908806 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.018350000e-01 |	 3.139335938e-03 |
+    DOT_PRODUCT |	        109 |	 1.988480000e-01 |	 1.824293578e-03 |
+  APPLY_STENCIL |	         45 |	 1.354430000e-01 |	 3.009844444e-03 |
+             CG |	          1 |	 3.009400000e-01 |	 3.009400000e-01 |
+     GS_PRE_CON |	         21 |	 6.277320000e-01 |	 2.989200000e-02 |
+            PCG |	          1 |	 9.662900000e-01 |	 9.662900000e-01 |
+----------------------------------------------------------------------------------
+
+Run #18
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2654.403323 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 842.644556 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 3.993360000e-01 |	 3.119812500e-03 |
+    DOT_PRODUCT |	        109 |	 1.983120000e-01 |	 1.819376147e-03 |
+  APPLY_STENCIL |	         45 |	 1.361690000e-01 |	 3.025977778e-03 |
+             CG |	          1 |	 3.013860000e-01 |	 3.013860000e-01 |
+     GS_PRE_CON |	         21 |	 6.158380000e-01 |	 2.932561905e-02 |
+            PCG |	          1 |	 9.493920000e-01 |	 9.493920000e-01 |
+----------------------------------------------------------------------------------
+
+Run #19
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2614.507247 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 850.160308 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.101570000e-01 |	 3.204351562e-03 |
+    DOT_PRODUCT |	        109 |	 1.998960000e-01 |	 1.833908257e-03 |
+  APPLY_STENCIL |	         45 |	 1.439420000e-01 |	 3.198711111e-03 |
+             CG |	          1 |	 3.059850000e-01 |	 3.059850000e-01 |
+     GS_PRE_CON |	         21 |	 6.062310000e-01 |	 2.886814286e-02 |
+            PCG |	          1 |	 9.409990000e-01 |	 9.409990000e-01 |
+----------------------------------------------------------------------------------
+
+Run #20
+Total number of threads active = 72
+[36mTESTS started
+There are 4 tests to pass[0m
+CG iterations = 20
+Performance CG = 2628.207234 [MLUP/s]
+[32mTest[ 1/ 4] Solver::CG - residual check success
+[0m[32mTest[ 2/ 4] Solver::CG - error check success
+[0mPCG iterations = 20
+Performance PCG = 838.521686 [MLUP/s]
+[32mTest[ 3/ 4] Solver::PCG - residual check success
+[0m[32mTest[ 4/ 4] Solver::PCG - error check success
+[0m[36mCongrats !!!, You did it !
+All tests passed[0m
+
+----------------------------------------------------------------------------------
+ 				  Timing Summary
+
+----------------------------------------------------------------------------------
+       FUNCTION |	     COUNTS |	  TOTAL TIME (s) |	  TIME/COUNT (s) |
+----------------------------------------------------------------------------------
+          AXPBY |	        128 |	 4.031010000e-01 |	 3.149226562e-03 |
+    DOT_PRODUCT |	        109 |	 1.983770000e-01 |	 1.819972477e-03 |
+  APPLY_STENCIL |	         45 |	 1.355490000e-01 |	 3.012200000e-03 |
+             CG |	          1 |	 3.043900000e-01 |	 3.043900000e-01 |
+     GS_PRE_CON |	         21 |	 6.179760000e-01 |	 2.942742857e-02 |
+            PCG |	          1 |	 9.540600000e-01 |	 9.540600000e-01 |
+----------------------------------------------------------------------------------
+
+email notification
+=== JOB_STATISTICS ===
+=== current date     : Tue Sep  3 11:15:18 CEST 2024
+= Job-ID             : 1564109 on fritz
+= Job-Name           : run_perf
+= Job-Command        : /home/hpc/ptfs/ptfs228h/Tinto6/run_perf.sh
+= Initial workdir    : /home/hpc/ptfs/ptfs228h/Tinto6
+= Queue/Partition    : singlenode
+= Slurm account      : ptfs with QOS=ptfs
+= Requested resources:  for 01:00:00
+= Elapsed runtime    : 00:01:59
+= Total RAM usage    : 0.0 GiB 
+= Node list          : f1253
+= Subm/Elig/Start/End: 2024-09-03T11:13:17 / 2024-09-03T11:13:17 / 2024-09-03T11:13:18 / 2024-09-03T11:15:17
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/woody          0.0K  1000.0G  1500.0G        N/A       1    5,000K   7,500K        N/A    
+    /home/hpc            6.1G   104.9G   209.7G        N/A  10,806      500K   1,000K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1       80K     250K        N/A    
+======================
