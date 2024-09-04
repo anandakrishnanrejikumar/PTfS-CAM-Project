@@ -13,6 +13,7 @@ double uSineFunc(int i, int j, double h_x, double h_y)
     return sin(M_PI*i*h_x)*sin(M_PI*j*h_y);
 }
 
+
 double rhsSineFunc(int i, int j, double h_x, double h_y)
 {
     return 2*M_PI*M_PI*sin(M_PI*i*h_x)*sin(M_PI*j*h_y);
