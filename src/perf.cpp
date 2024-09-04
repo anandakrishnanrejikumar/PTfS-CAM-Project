@@ -44,6 +44,7 @@ int main(const int argc, char* const argv[])
     int numThreads = 1;
 
 #pragma omp parallel
+   
     {
 #pragma omp single
         {
