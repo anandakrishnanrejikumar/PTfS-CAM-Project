@@ -1,4 +1,3 @@
-//This is from branch Ananda with second attempt to learn the same in VS Code
 #include "PDE.h"
 #include <math.h>
 #include <iostream>
